@@ -1,0 +1,72 @@
+<!-- <p>customer-details works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+            <th>email</th>
+            <th>phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.customerId}}</td>
+            <td>{{customer.customerName}}</td>
+            <td>{{customer.address}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.telephone}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+<div class="content"> 
+    
+    <div class="container">
+      <h2 class="mb-5">Customer Details</h2>
+      
+
+      <div class="table-responsive custom-table-responsive">
+
+        <table class="table custom-table">
+          <thead>
+            <tr>  
+
+              <th scope="col">
+                <label class="control control--checkbox">
+                  <input type="checkbox"  class="js-check-all"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              
+              <th scope="col">Customer Id</th>
+              <th scope="col">Customer Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telephone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr scope="row" *ngFor="let customer of customers">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              <td>{{customer.customerId}}</td>
+              <td>{{customer.customerName}}</td>
+              <td>{{customer.address}}</td>
+              <td>{{customer.email}}</td>
+              <td>{{customer.telephone}}</td>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+           
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>

@@ -1,0 +1,17 @@
+<div class="signup-box" style="text-align: center">
+    <h1>Create Account</h1>
+    <form>
+    <label for="empId"> Employee Id:</label>
+    <input  #employeeid  type="text" placeholder="Enter Employee Id"><br><br>
+    <label for="name"> Name:</label>
+    <input #name  type ="text" placeholder = "Enter your name"><br><br>
+    <label for="email"> Email:</label>
+    <input #email type ="text" placeholder = "Enter email id"><br><br>
+    <label for="phone"> Phone No:</label>
+    <input #phone type ="text" placeholder = "Enter phone number"><br><br>
+    <button (click)="addEmployee(employeeid.value,name.value,email.value,phone.value)" type = "submit">Create</button>
+    <button routerLink="" >Cancel</button>
+    <h2>{{message}}</h2>
+    </form>
+
+</div>

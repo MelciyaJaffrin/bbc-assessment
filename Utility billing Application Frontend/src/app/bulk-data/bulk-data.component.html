@@ -1,0 +1,81 @@
+
+<div>
+<input  type="file" (change)="onFileSelected($event)" /><br><br>
+    <button (click)="convertCsvToJson()" >Convert CSV to Json</button>
+    <pre>{{ jsonResult | json }}</pre>
+
+    
+
+    <button (click)="onSend()" >Send Data</button>
+</div>
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Bill Id</th>
+                <th>Unit consumed</th>
+                <th>Due Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bill of bills">
+                <td>{{bill.customerId}}</td>
+                <td>{{bill.billId}}</td>
+                <td>{{bill.unitsConsumed}}</td>
+                <td>{{bill.billDueDate}}</td>
+                <td>{{bill.amount}}</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <div class="content"> 
+    
+        <div class="container">
+          <h2 class="mb-5">Bill Details</h2>
+          
+    
+          <div class="table-responsive custom-table-responsive">
+    
+            <table class="table custom-table">
+              <thead>
+                <tr style="background-color: black;">  
+    
+                  <th scope="col">
+                    <label class="control control--checkbox">
+                      <input type="checkbox"  class="js-check-all"/>
+                      <div class="control__indicator"></div>
+                    </label>
+                  </th>
+                  
+                  <!-- <th scope="col">Customer Id</th> -->
+                  <th scope="col">Bill Id</th>
+                  <th scope="col">Units consumed</th>
+                  <th scope="col">Due Date</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row" *ngFor="let bill of bills">
+                  <th scope="row">
+                    <label class="control control--checkbox">
+                      <input type="checkbox"/>
+                      <div class="control__indicator"></div>
+                    </label>
+                    <!-- <td>{{bill.customerId}}</td> -->
+                    <td>{{bill.billId}}</td>
+                    <td>{{bill.unitsConsumed}}</td>
+                    <td>{{bill.billDueDate}}</td>
+                    <td>{{bill.amount}}</td>
+                </tr>
+                <tr class="spacer"><td colspan="100"></td></tr>
+               
+              </tbody>
+            </table>
+          </div>
+    
+    
+        </div>
+    
+      </div>

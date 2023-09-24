@@ -1,0 +1,16 @@
+<p>class-binding works!</p>
+
+<h4>Task 1</h4>
+<button (click)="changeTextStyle()">Change Style</button>
+<p [ngClass]="{ 'italic': isItalic, 'blue-text': isBlueText }">This is a task for class-binding.</p>
+
+<h4>Task 2</h4>
+<input #data type="text" placeholder="Type Something"><br><br>
+<button (click) = "sendData(data.value)"> Send Data </button>
+
+<h4>Task 3</h4>
+<h4>Prime number or Not</h4>
+<input #num type="number" placeholder="Type Any Number"><br>
+<button (click)="isPrimeOrNot(num.value)">Check</button>
+<h2>{{primeMessage}}</h2>
+

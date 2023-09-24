@@ -1,0 +1,50 @@
+<!-- <p>employee-login works!</p> -->
+
+<!-- <div class="container" style="text-align:center">
+    <h1>Login Page</h1>
+    <h3><label for="empId">Employee Id </label></h3>
+    <input #employeeId type = "text" placeholder="Enter Employee Id"><br><br>
+    <h3><label for="otp">OTP </label></h3>
+    <input #otp type = "text" placeholder = "Enter otp"><br><br>
+    <button type ="generateotp">Generate OTP</button> 
+    <button routerLink="/home" type = "login" >Login</button><br><br>
+    <a routerLink="/signup" style="color: red;">Didn't have an account? Sign up here!</a> 
+
+</div>
+Edhuku dae ngForm pota therila
+poda koodatho
+ngForm yaarukume work aagala dae
+Potrundha thookiru
+enga iruku nu therilayae
+-->
+
+<div class="login-box">
+    <h2>Login Page</h2>
+    <form >
+      <div class="user-box">
+        <input #id type="text" name="" required="">
+        <label>Employee Id</label>
+      </div>
+      <div class="user-box">
+        <input #otp type="password" name="" required="">
+        <label>OTP</label>
+      </div>
+      <a  (click)="generateOtp(id.value)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Generate Otp
+      </a>
+      <a routerLink="/home" (click)="onLogin(id.value,otp.value)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+      </a>
+
+      <a routerLink="/signup" style="color: red; font-family:Arial, Helvetica, sans-serif; font-size:small;">Didn't have an account? Sign up here!</a>
+
+    </form>
+  </div>

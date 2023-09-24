@@ -1,0 +1,17 @@
+<!-- <p>add-customer works!</p> -->
+<div class="add" style="text-align: center">
+    <h1 style="color: #ffff;">New Customer</h1>
+    <label for="cusId"> Customer Id:</label>
+    <input #customerid type="text" placeholder="Enter Customer Id"><br><br>
+    <label for="name"> Customer Name:</label>
+    <input #name type ="text" placeholder = "Enter customer name"><br><br>
+    <label for="address"> Address:</label>
+    <input #address type ="text" placeholder = "Enter address"><br><br>
+    <label for="email"> Email:</label>
+    <input #email type ="text" placeholder = "Enter email id"><br><br>
+    <label for="phone"> Phone Number:</label>
+    <input #phone type ="text" placeholder = "Enter phone number"><br><br>
+    <button (click)="addCustomer(customerid.value,name.value,address.value,email.value,phone.value)" type = "submit">Create Customer</button>
+    <button routerLink="/home" >Cancel</button>
+
+</div>

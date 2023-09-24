@@ -1,0 +1,85 @@
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.employeeId}}</td>
+            <td>{{employee.employeeName}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.mobile}}</td>
+        </tr>
+    </tbody>
+</table>  -->
+
+<div class="content"> 
+    
+    <div class="container">
+      <h2 class="mb-5">Employee Details</h2>
+      
+
+      <div class="table-responsive custom-table-responsive">
+
+        <table class="table custom-table">
+          <thead>
+            <tr>  
+
+              <th scope="col">
+                <label class="control control--checkbox">
+                  <input type="checkbox"  class="js-check-all"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              
+              <th scope="col">Employee Id</th>
+              <th scope="col">Employee Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr scope="row" *ngFor="let employee of employees">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <td>{{employee.employeeId}}</td>
+                <td>{{employee.employeeName}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.mobile}}</td>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            
+            
+            <!-- <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              
+              <td> </td>
+              <td><a href="#">Gaspar Semenov</a></td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>  -->
+
+            
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>

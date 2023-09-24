@@ -1,0 +1,16 @@
+<!-- <p>bill works!</p> -->
+<div class="bill-box" style="text-align: center">
+    <h1 style="color: #ffff;">Bill</h1>
+    <label for="customerId"> Customer Id:</label>
+    <input #customerId type="text" placeholder="Enter Customer Id"><br><br>
+    <label for="billId"> Bill Id:</label>
+    <input #billId type ="text" placeholder = "Enter Bill Id"><br><br>
+    <label for="units"> Units Consumed:</label>
+    <input #unitsconsumed type ="text" placeholder = "Enter units consumed"><br><br>
+    <label for="duedate"> Bill Due Date:</label>
+    <input #duedate type ="text" placeholder = "Enter due Date"><br><br>
+    
+    <button (click)="addBill(customerId.value,billId.value,unitsconsumed.value,duedate.value)" type = "submit">Save</button>
+    <button routerLink="/home" >Cancel</button>
+
+</div>

@@ -1,0 +1,42 @@
+label{
+    width: 100px;
+    text-align: center;
+    font-size: medium;
+    color: #ffff;
+    padding: 5px;
+    
+}
+.add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    
+  }
+
+  button {
+    background-color: #03e9f4;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+

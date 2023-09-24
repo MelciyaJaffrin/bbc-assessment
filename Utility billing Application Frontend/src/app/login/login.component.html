@@ -1,0 +1,11 @@
+<p>login works!</p>
+
+<div style="text-align: center;">
+    <h2>Login Form</h2>
+    <hr>
+    <input #username type="text" placeholder="Enter Username"><br><br>
+    <input #password type="password" placeholder="Enter Password"><br><br>
+    <button (click)="onClick(username.value,password.value)">Login</button>
+    <hr>
+    <h2>{{message}}</h2>
+</div>
